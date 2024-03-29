@@ -5,6 +5,7 @@ import CanvasLoader from '../Loader'
 import { useMediaQuery } from '@/hooks'
 import { EScreenSize } from '@/enums'
 
+
 const modelPCConfig = {
   mobile: {
     scale: 0.7,
@@ -18,6 +19,7 @@ const modelPCConfig = {
 const Computers = () => {
   const computer = useGLTF('./desktop_pc/scene.gltf')
   const isMobile = useMediaQuery(`(max-width: ${EScreenSize.MOBILE})`)
+
 
   return (
     <mesh>
