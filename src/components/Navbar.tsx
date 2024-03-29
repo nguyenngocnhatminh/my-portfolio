@@ -6,6 +6,7 @@ import { useMemo } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import { fadeIn } from '@/utils/motion.util'
+import { HashLink } from 'react-router-hash-link'
 
 const Navbar = () => {
   const location = useLocation()
@@ -51,7 +52,7 @@ const Navbar = () => {
                 active === link.id ? 'text-white' : 'text-secondary'
               } hover:text-white text-[18px] font-medium cursor-pointer`}
             >
-              <a href={`/#${link.id}`}>{link.title}</a>
+              <HashLink to={`//#${link.id}`} scroll={el => el.scrollIntoView({behavior:'smooth'})}>{link.title}</HashLink>
             </li>
           ))}
         </ul>
