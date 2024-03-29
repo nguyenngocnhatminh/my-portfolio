@@ -80,12 +80,7 @@ const Navbar = () => {
                     active === link.id ? 'text-white' : 'text-secondary'
                   } font-poppins font-medium cursor-pointer text-[16px]`}
                 >
-                  <a
-                    href={`/#${link.id}`}
-                    onClick={setToggleMenu}
-                  >
-                    {link.title}
-                  </a>
+                  <HashLink to={`//#${link.id}`} scroll={el => el.scrollIntoView({behavior:'smooth'})}>{link.title}</HashLink>
                 </li>
               ))}
             </ul>

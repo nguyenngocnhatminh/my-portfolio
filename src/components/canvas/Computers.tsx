@@ -42,7 +42,7 @@ const Computers = () => {
         shadow-mapSize={1024}
       />
       <primitive
-        object={computer.scene}
+        object={computer?.scene}
         rotation={[-0.01, -0.2, -0.1]}
         {...modelPCConfig[isMobile ? 'mobile' : 'desktop']}
       />
