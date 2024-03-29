@@ -1,11 +1,9 @@
 import { styles } from '@/constants/style.constant'
 import { TypeAnimation } from 'react-type-animation'
-import ComputerCanvas from './canvas/Computers'
-import { motion } from 'framer-motion'
 
 const Hero = () => {
   return (
-    <section className='relative w-full h-screen mx-auto '>
+    <section className='relative w-full h-[50vh] mx-auto '>
       <div
         className={`${styles.paddingX} absolute inset-0 top-[120px] container flex flex-row items-start gap-5`}
       >
@@ -34,7 +32,6 @@ const Hero = () => {
           </p>
         </div>
       </div>
-      <ComputerCanvas />
     </section>
   )
 }

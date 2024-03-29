@@ -60,14 +60,6 @@ const services = [
 ]
 
 const technologies = [
-  // {
-  //   name: 'HTML 5',
-  //   icon: html,
-  // },
-  // {
-  //   name: 'CSS 3',
-  //   icon: css,
-  // },
   {
     name: 'Golang',
     icon: golang
@@ -185,6 +177,30 @@ const testimonials = [
 
 const projects = [
   {
+    name: 'Company\'s Official Website',
+    description:
+      'The website offers overview of the company, including its mission, vision, values, history, and key milestones, news & press',
+    tags: [
+      {
+        name: 'golang',
+        color: 'blue-text-gradient'
+      },
+      {
+        name: 'grpc',
+        color: 'green-text-gradient'
+      },
+      {
+        name: 'kafka',
+        color: 'pink-text-gradient'
+      },
+      {
+        name: 'Amazon S3',
+        color: 'orange-text-gradient'
+      }
+    ],
+    image: bvcorp
+  },
+  {
     name: 'Human capital management',
     description: 'State the main objective of the project, which could be to streamline HR operations, enhance employee experience, and improve workforce management through the implementation of an HCM system with self-service capabilities.',
     tags: [
@@ -226,30 +242,6 @@ const projects = [
       },
     ],
     image: hcm
-  },
-  {
-    name: 'Company\'s Official Website',
-    description:
-      'The website offers overview of the company, including its mission, vision, values, history, and key milestones, news & press',
-    tags: [
-      {
-        name: 'golang',
-        color: 'blue-text-gradient'
-      },
-      {
-        name: 'grpc',
-        color: 'green-text-gradient'
-      },
-      {
-        name: 'kafka',
-        color: 'pink-text-gradient'
-      },
-      {
-        name: 'Amazon S3',
-        color: 'orange-text-gradient'
-      }
-    ],
-    image: bvcorp
   },
   {
     name: 'Company\'s Career Website',
